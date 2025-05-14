@@ -1,5 +1,5 @@
 const readline = require('readline');
-const { validateQuantity, validateName, validatePrice, validateCategory } = require('./validator');
+const { validateQuantity, validateName, validatePrice, validateCategory } = require('../utils/validator');
 const { CATEGORIES } = require('../config/constants');
 
 const rl = readline.createInterface({
@@ -45,12 +45,10 @@ const getShoppingBasket = async () => {
     }
   }
   
+  rl.close();
   return items;
 };
 
-const close = () => rl.close();
-
 module.exports = {
-  getShoppingBasket,
-  close
+  getShoppingBasket
 }; 

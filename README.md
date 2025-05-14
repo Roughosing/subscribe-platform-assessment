@@ -1,4 +1,4 @@
-## SUBSCRIBE Platform Assignmnet
+### SUBSCRIBE Platform Assessment
 
 # Sales Tax Calculator
 

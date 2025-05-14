@@ -1,5 +1,5 @@
+const { getShoppingBasket } = require('./services/shoppingBasketService');
 const { calculateTaxes } = require('./services/taxCalculator');
-const { getShoppingBasket, close } = require('./utils/inputHandler');
 const { formatReceipt } = require('./utils/formatter');
 
 async function main() {
@@ -12,8 +12,6 @@ async function main() {
     console.log(formatReceipt(receipt));
   } catch (error) {
     console.error('An error occurred:', error.message);
-  } finally {
-    close();
   }
 }
 
